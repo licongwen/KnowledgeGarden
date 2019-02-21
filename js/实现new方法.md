@@ -7,7 +7,7 @@ function Parent(name){
 let p1 = new Parent('li');
 console.log(p1);//{name:li}
 ```
-### 先来说一说执行 new是 发生了什么
+### 先来说一说执行 new 发生了什么
 
 * 创建了一个空的对象
 * 将空对象的__proto__指向构造函数的prototype
