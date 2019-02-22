@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节流测试</title>
+</head>
+<body>
+    <ul>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+        <li>throttle 测试</li>
+    </ul>
+    <script>
+        window.onload = function(){
+            //防抖函数
+            function throttle(fn,wait){
+                let timer = null;
+                let args = [].slice.call(arguments,2);
+                console.log(args)
+                let self = this;
+                return function(){
+                    if(timer == null) {
+                        timer = setTimeout(function(){
+                            fn.apply(self,args);
+                            timer = null;
+                        },wait) 
+                    }
+                }
+            }
+            //事件触发函数
+            function handler(arg1,arg2){
+                console.log(Math.random()+'-----'+arg1+'------'+arg2);
+            }
+            window.addEventListener('scroll',throttle(handler,1000,'li','congwen'))
+        }
+    </script>
+</body>
+</html>
