@@ -60,7 +60,6 @@
             function throttle(fn,wait){
                 let timer = null;
                 let args = [].slice.call(arguments,2);
-                console.log(args)
                 let self = this;
                 return function(){
                     if(timer == null) {
