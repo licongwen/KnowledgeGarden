@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .textarea{
+            overflow: auto;
+            resize: both;
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            border: 1px solid #888;
+        }
+        .textarea:empty:before{
+            content: attr(placeholder);
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="textarea" contenteditable="true" placeholder='i am placeholder'>
+
+    </div>
+</body>
+</html>
