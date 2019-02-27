@@ -22,7 +22,7 @@ function sayName(a,b){
     console.log(this.name);
     console.log([a,b]);
 }
-let b = bindFn(obj,1);
+let b = sayname.bindFn(obj,1);
 b(2)//li [1,2]
 
 ```
