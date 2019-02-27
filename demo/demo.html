@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #div1{
+            margin: 20px;
+        }
+        .div2{
+            display: inline-block;
+            border: 1px solid #ccc;
+            width: 300px;
+            /* position: relative; */
+        }
+        .div2-1{
+            width: 100px;
+            height: 200px;
+            border: 1px solid #ccc;
+            background: #f66;
+            float: left;
+        }
+        .div2-2{
+            /* width: 100px; */
+            height: 200px;
+            border: 1px solid #ccc;
+            /* margin: 10px; */
+            background: #fcc;
+        }
+    </style>
 </head>
 <body>
+    <div class="div2">
+        <div class="div2-1">
+                123
+        </div>
+        <div class="div2-1">
+                1313
+        </div>
+    </div>
     <div id='div1'>
-        <input type="button" id='btn1' value="btn1" onclick="function fun(){console.log(2333)}"/>
+        <input type="button" id='btn1' value="btn1"/>
         <input type="button" id='btn2' value='btn2'/>
         <input type="button" id='btn3' value='btn3'/>
     </div>
@@ -16,13 +49,24 @@
         window.onload = function(){
             let oDiv = document.getElementById('div1'),
             oBtn1 = document.getElementById('btn1');
+            oBtn1.onclick =function fn(){
+                alert(1)
+            }
+            oBtn1.onclick =function fn(){
+                alert(2)
+            }
             // oBtn1.addEventListener('click',function(e){
-            //     console.log(e);
             //     console.log(1)
             // })
-            oDiv.addEventListener('click',function(e){
-                console.log(e.target.id)
-            })
+            // oBtn1.addEventListener('click',function(e){
+            //     console.log(21)
+            // })
+            // oDiv.addEventListener('click',function(e){
+            //     console.log(e.target.id)
+            // })
+            // oDiv.addEventListener('click',function(e){
+            //     console.log(123)
+            // })
         }
     </script>
 </body>
