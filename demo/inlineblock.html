@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何解决使用inline-block引起的空白间隙的问题</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .oul1{
+            list-style: none;
+        }
+        .oli1{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        .oul2{
+            list-style: none;
+            margin-top: 30px;
+            font-size: 0;
+        }
+        .oli2{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: red;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- inblock造成的元素间隙问题 -->
+    <ul class="oul1">
+        <li class="oli1">111</li>
+        <li class="oli1">222</li>
+        <li class="oli1">333</li>
+        <li class="oli1">444</li>
+        <li class="oli1">555</li>
+    </ul>
+    <!-- 解决方法 -->
+    <ul class="oul2">
+        <li class="oli2">111</li>
+        <li class="oli2">222</li>
+        <li class="oli2">333</li>
+        <li class="oli2">444</li>
+        <li class="oli2">555</li>
+    </ul>
+</body>
+</html>
