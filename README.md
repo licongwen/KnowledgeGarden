@@ -11,8 +11,10 @@
 ## CSS相关
 
 * [CSS3部分新特性](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/CSS3%E6%96%B0%E7%89%B9%E6%80%A7.md)
-* [BFC和IFC](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/BFC%E5%92%8CIFC.mds)
+* [BFC和IFC](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/BFC%E5%92%8CIFC.md)
 * [垂直居中布局](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.md)
+* [flex布局](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/flex%E5%B8%83%E5%B1%80.md)
+* [解决使用inline-block引起的空白间隙的问题](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/flex%E5%B8%83%E5%B1%80.md)
 
 ## js相关
 

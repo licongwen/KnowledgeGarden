@@ -6,21 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>左边定宽，右边自适应宽度布局</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .outer{
-            width: 400px;
-            border: 1px;
-            display: inline-block;
+            width: 90%;
+            height: 200px;
             border: 1px solid #ccc;
+
         }
         .inner1{
-            width: 150px;
-            height: 200px;
-            background: #ffcccc;
+            width: 200px;
+            margin-right: 10px;
+            height: 80%;
+            background: #fcc;
             float: left;
         }
         .inner2{
-            height: 200px;
-            background: #f66;
+            height: 100%;
+            background: #aec;
             overflow: auto;
         }
     </style>
