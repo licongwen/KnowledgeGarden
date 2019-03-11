@@ -9,4 +9,6 @@
 
 2. 利用负的margin值(不推荐)
 
+3. 标签不换行
+
 [具体代码参考](https://github.com/licongwen/JsFoundation/blob/master/demo/inlineblock.html)
