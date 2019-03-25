@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      * { 
+        margin: 0; 
+        padding: 0; 
+      }
+      html, 
+      body, 
+      #app { 
+        margin: 0; 
+        padding: 0; 
+        height: 100%; 
+      }
+      #header, #footer {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #555;
+        color: #fff;
+        width: 100%;
+      }
+      #side { 
+        width: 200px; 
+        background: #eee; 
+      }
+
+      /* css here */
+      /* #app{
+          overflow: auto;
+      }
+      #side{
+          float: left;
+          height: calc(100vh - 100px)
+      }
+      #main{
+          height: calc(100vh - 100px)
+      }
+      #main li{
+          list-style:none;
+      } */
+      #app{
+          display:flex;
+          flex-wrap: wrap;
+      }
+      #header,#footer{
+          flex-basis:100%;
+      }
+      #side{
+          height: calc(100vh - 100px)
+      }
+      #main{
+          flex-grow: 1;
+      }
+      ul li{
+          display: inline-block;
+      }
+      ul li:nth-of-type(2n)::after{
+          content:'|'
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header">header</header>
+      <aside id="side">side</aside>
+      <div id="main">
+        <ul>
+          <li><a href="https://www.bilibili.com/1">Link1</a></li>
+          <li><a href="https://www.bilibili.com/2">Link2</a></li>
+          <li><a href="https://www.bilibili.com/3">Link3</a></li>
+          <br>
+          <li><a href="https://www.bilibili.com/4">Link4</a></li>
+          <li><a href="https://www.bilibili.com/5">Link5</a></li>
+        </ul>
+      </div>
+      <footer id="footer">footer</footer>
+    </div>
+    <script>
+      // JS here
+      let oDiv = document.getElementById('main');
+      let oA = oDiv.getElementsByTagName('a');
+      for(let i=0;i<oA.length;i++){
+        oA[i].onclick = function(e){
+            e.preventDefault();
+            alert(e.target.href)
+        }
+      }
+    </script>
+  </body>
+</html>
