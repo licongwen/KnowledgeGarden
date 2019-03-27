@@ -3,7 +3,7 @@
 * bind是Function原型上的方法
 
 ```js
-Function.prototype.bindFn = function bind(){
+Function.prototype.bindFn = function (){
     let self = this;//保存自身的this
     let firstArg = [].shift.call(arguments);//取到参数的第一个，修改了原arguments，删除了第一项；
     let restArg = [].slice.call(arguments);//将修改后的arguments转化为数组
@@ -22,7 +22,7 @@ function sayName(a,b){
     console.log(this.name);
     console.log([a,b]);
 }
-let b = sayname.bindFn(obj,1);
+let b = sayName.bindFn(obj,1);
 b(2)//li [1,2]
 
 ```
