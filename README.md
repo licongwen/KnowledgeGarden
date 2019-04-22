@@ -14,7 +14,7 @@
 * [BFC和IFC](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/BFC%E5%92%8CIFC.md)
 * [垂直居中布局](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.md)
 * [flex布局](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/flex%E5%B8%83%E5%B1%80.md)
-* [解决使用inline-block引起的空白间隙的问题](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/flex%E5%B8%83%E5%B1%80.md)
+* [解决使用inline-block引起的空白间隙的问题](https://github.com/licongwen/JsFoundation/blob/master/htmlcss/inlie-block%E8%BE%B9%E6%A1%86%E7%A9%BA%E7%99%BD%E7%9A%84%E9%97%AE%E9%A2%98.md)
 
 ## js相关
 
