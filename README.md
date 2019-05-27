@@ -25,4 +25,5 @@
 * [对象的深浅拷贝](https://github.com/licongwen/JsFoundation/blob/master/js/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%8B%B7%E8%B4%9D.md)
 * [判断一个字符串中出现次数最多的字符，统计这个次数](https://github.com/licongwen/JsFoundation/blob/master/js/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E4%B8%AA%E6%95%B0.md)
 * [js的继承](https://github.com/licongwen/JsFoundation/blob/master/js/js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF.md)
+* [数组乱序](https://github.com/licongwen/JsFoundation/blob/master/js/js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF.md)
 
