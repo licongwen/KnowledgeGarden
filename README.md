@@ -1,6 +1,4 @@
-# JsFoundation
-
-记录一些学习过程中的心得
+# KnowledgeGarden
 
 ## html相关
 

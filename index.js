@@ -35,20 +35,3 @@ app.use(router.routes())
 app.listen(3000, () => {
   console.log('Server is running at http://localhost:3000')
 })
-
-
-// app.use(async ctx => {
-//   const { request: { url } } = ctx
-
-//   if (url === '/') {
-//     try {
-//       const finePath = './index.html'
-//       const fileContent = await fs.promises.readFile(finePath, 'utf-8')
-//       ctx.type = 'text/html'
-//       ctx.body = fileContent
-//     } catch (e) {
-//       ctx.status = 500
-//       ctx.body = 'Internal Server Error'
-//     }
-//   }
-// })

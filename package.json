@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "start:dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "koa": "^2.15.2",
-    "koa-router": "^12.0.1"
+    "koa-router": "^12.0.1",
+    "vite": "^5.2.8"
   }
 }
